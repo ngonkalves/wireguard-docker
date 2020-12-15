@@ -14,8 +14,8 @@ ENV IPTABLES_MASQ=1
 ENV WATCH_CHANGES=0
 
 # Copy scripts to containers
-COPY run /scripts
-COPY genkeys /scripts
+COPY ../run /scripts
+COPY ../genkeys /scripts
 RUN chmod 755 /scripts/*
 
 # Wirguard interface configs go in /etc/wireguard
